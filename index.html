@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>An-Nurr Frozen Foods | Frozen fish and chicken in Ayobo, Lagos</title>
+<meta name="description" content="Frozen fish, chicken and turkey sold by the quarter, half, 1kg or 2kg in Ayobo, Lagos. Order on WhatsApp.">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><text y=%22.9em%22 font-size=%2290%22>🐟</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap header-row">
+      <div class="wordmark"><img class="logo-img" src="images/logo.png" alt="" width="44" height="44"><span>An-Nurr Frozen Foods</span></div>
+      <nav class="nav">
+        <a href="#fish">Fish</a>
+        <a href="#chicken">Chicken &amp; Turkey</a>
+        <a href="#prices">Prices</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="border-top:none;">
+    <div class="wrap">
+      <div>
+        <h1>Quality frozen fish and chicken, sold by the size you need.</h1>
+        <p>An-Nurr Frozen Foods supplies fresh, well-kept frozen fish and chicken to homes around Ayobo, Lagos. Pick your size — Quarter, Half, 1kg or 2kg — and message us on WhatsApp to order.</p>
+        <div class="hero-badges">
+          <span class="badge live" id="open-badge"></span>
+          <span class="badge">Stock updated weekly</span>
+          <span class="badge">Open 7 days</span>
+        </div>
+      </div>
+      <div class="hero-photos">
+        <div><img src="images/titus.jpg" alt="Titus fish"></div>
+        <div><img src="images/soft-chicken.jpg" alt="Soft chicken"></div>
+        <div><img src="images/kote.jpg" alt="Kote fish"></div>
+        <div><img src="images/croaker.jpg" alt="Croaker fish"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap search-row">
+    <input type="search" id="search" placeholder="Search for a fish or chicken type" aria-label="Search products">
+  </div>
+
+  <section id="fish">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Our fish</h2>
+        <p>Prices below are per size — Quarter, Half, 1kg and 2kg.</p>
+      </div>
+      <div class="goods-grid" id="fish-grid"></div>
+    </div>
+  </section>
+
+  <section id="chicken">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Chicken &amp; Turkey</h2>
+        <p>Per kg, in the same four sizes.</p>
+      </div>
+      <div class="goods-grid" id="chicken-grid"></div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Price list</h2>
+      </div>
+      <p class="updated" id="updated"></p>
+      <div class="table-wrap">
+        <table>
+          <thead id="price-head"></thead>
+          <tbody id="price-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Feedback &amp; suggestions</h2>
+        <p>Tell us what you'd like us to stock, or how we can serve you better.</p>
+      </div>
+      <form class="feedback-box" id="feedback-form" name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="feedback">
+        <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+        <label for="fb-name">Your name</label>
+        <input type="text" id="fb-name" name="name" placeholder="e.g. Ade Balogun">
+        <label for="fb-message">Your feedback</label>
+        <textarea id="fb-message" name="message" placeholder="Write your comment or suggestion here..." required></textarea>
+        <button type="submit" class="btn">Send feedback</button>
+        <p class="form-note" id="fb-note" data-ok="Thank you — your feedback has been received."></p>
+      </form>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3>Contact us</h3>
+          <address>
+            <p>An-Nurr Frozen Foods</p>
+            <p>4, Raji Ajanaku Street, Alaja, Ayobo, Lagos</p>
+            <p>Phone: <a href="tel:+2348023672076">0802 367 2076</a></p>
+            <p>WhatsApp: <a href="https://wa.me/2348023672076" target="_blank" rel="noopener">0802 367 2076</a></p>
+            <p>Open Monday – Sunday, 7:30 am – 9:30 pm</p>
+          </address>
+        </div>
+        <div>
+          <h3>Get weekly stock updates</h3>
+          <p style="color:var(--muted);font-size:.92rem;margin-bottom:6px;">New stock and price changes, straight to your inbox.</p>
+          <form id="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="newsletter">
+            <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+            <label for="news-email">Email address</label>
+            <div class="newsletter-row">
+              <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+              <button type="submit" class="btn">Subscribe</button>
+            </div>
+            <p class="form-note" id="news-note" data-ok="Thanks for subscribing!"></p>
+          </form>
+        </div>
+      </div>
+      <p class="copyright">© 2026 An-Nurr Frozen Foods. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

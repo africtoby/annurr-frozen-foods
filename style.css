@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root{
+    --ice:#f2f7fa;
+    --navy:#0f2a3d;
+    --teal:#1f7a8c;
+    --coral:#e0623f;
+    --muted:#54697a;
+    --card:#ffffff;
+    --line:#dbe6ec;
+    font-size:16px;
+  }
+  html{scroll-behavior:smooth;}
+*{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--ice);
+    color:var(--navy);
+    font-family:'Work Sans',Arial,sans-serif;
+    line-height:1.55;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',Georgia,serif;
+    font-weight:600;
+    line-height:1.15;
+  }
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  /* ---------- Header ---------- */
+  header{border-bottom:1px solid var(--line);padding:20px 0;}
+  .header-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+  .wordmark{font-size:1.4rem;font-weight:700;letter-spacing:.2px;}
+  .wordmark{display:flex;align-items:center;gap:10px;}
+  .tagline{color:var(--muted);font-size:.92rem;}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:48px 0 40px;}
+  .hero h1{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:16px;max-width:26ch;}
+  .hero p{max-width:62ch;color:var(--muted);font-size:1.05rem;margin-bottom:20px;}
+  .hero-badges{display:flex;gap:10px;flex-wrap:wrap;}
+  .badge{border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:999px;font-size:.85rem;color:var(--muted);}
+
+  /* ---------- Section heading pattern ---------- */
+  section{padding:44px 0;border-top:1px solid var(--line);}
+  .section-head{margin-bottom:26px;max-width:60ch;}
+  .section-head h2{font-size:1.6rem;margin-bottom:6px;}
+  .section-head p{color:var(--muted);font-size:.95rem;}
+
+  /* ---------- Fish / Chicken cards ---------- */
+  .goods-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .goods-card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .goods-img{position:relative;aspect-ratio:4/3;background:#fff;border-bottom:1px solid var(--line);}.goods-img img{width:100%;height:100%;object-fit:contain;padding:10px;}
+  .goods-body{padding:16px 18px 18px;}
+  .goods-body h3{font-size:1.1rem;margin-bottom:3px;}
+  .goods-body .sub{color:var(--muted);font-size:.85rem;margin-bottom:14px;}
+
+  /* sizes list inside each card */
+  .sizes{border-top:1px dashed var(--line);padding-top:12px;}
+  .sizes-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px;}
+  .size-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;font-size:.9rem;gap:8px;}
+  .size-name{flex:0 0 68px;font-weight:500;}
+  .size-price{flex:1;color:var(--navy);}
+  .size-status{
+    font-size:.72rem;
+    padding:2px 8px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .status-available{background:#e4f5ec;color:#1f7a4c;}
+  .status-low{background:#fdf1dc;color:#a86a12;}
+  .status-out{background:#fbe6e2;color:#b23a22;}
+  .status-notoffered{background:#eceff1;color:#8a96a0;}
+
+  .order-btn{
+    border:none;
+    background:var(--teal);
+    color:#fff;
+    font-size:.78rem;
+    font-weight:600;
+    padding:6px 10px;
+    border-radius:6px;
+    cursor:pointer;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+  .order-btn:hover{background:#175f6d;}
+  .order-btn[disabled]{
+    background:#d7dee2;
+    color:#8a96a0;
+    cursor:not-allowed;
+    pointer-events:none;
+  }
+  .row-notoffered .size-name,
+  .row-notoffered .size-price{color:#a9b3ba;}
+  .row-notoffered .size-price::after{content:"Not sold in this size";font-size:.82rem;}
+
+  .note-line{font-size:.78rem;color:var(--muted);margin-top:12px;}
+
+  /* ---------- Price table ---------- */
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  thead th{text-align:left;background:var(--navy);color:#fff;padding:13px 16px;font-family:'Fraunces',serif;font-weight:600;font-size:.92rem;}
+  tbody td{padding:11px 16px;border-top:1px solid var(--line);font-size:.9rem;}
+  tbody tr:nth-child(even){background:#f7fafb;}
+  td.price{text-align:right;font-weight:600;}
+  td.status-cell{text-align:right;}
+
+  /* ---------- Feedback form ---------- */
+  .feedback-box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px;max-width:640px;}
+  label{display:block;font-size:.88rem;font-weight:500;margin-bottom:6px;}
+  input[type="text"],input[type="email"],input[type="tel"],textarea{
+    width:100%;border:1px solid var(--line);border-radius:6px;padding:11px 13px;
+    font-family:inherit;font-size:.95rem;background:#fbfdfe;color:var(--navy);margin-bottom:16px;
+  }
+  textarea{resize:vertical;min-height:100px;}
+  input:focus,textarea:focus{outline:2px solid var(--teal);outline-offset:1px;}
+  .btn{display:inline-block;background:var(--teal);color:#fff;border:none;padding:12px 24px;border-radius:6px;font-family:'Work Sans',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;}
+  .btn:hover{background:#175f6d;}
+  .form-note{font-size:.85rem;color:var(--teal);margin-top:12px;display:none;}
+  .form-note.show{display:block;}
+
+  /* ---------- Footer: contact + newsletter ---------- */
+  footer{border-top:1px solid var(--line);padding:40px 0 32px;background:#e8f1f4;}
+  .footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;}
+  footer h3{font-size:1.05rem;margin-bottom:10px;}
+  address{font-style:normal;color:var(--muted);font-size:.94rem;}
+  address p{margin-bottom:4px;}
+  .newsletter-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
+  .newsletter-row input[type="email"]{margin-bottom:0;flex:1;min-width:180px;}
+  .copyright{text-align:center;color:var(--muted);font-size:.8rem;margin-top:32px;}
+
+  @media (max-width:820px){
+    .goods-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:560px){
+    .goods-grid{grid-template-columns:1fr;}
+  }
+.nav a{color:var(--muted);text-decoration:none;font-size:.9rem;margin-left:18px;}
+.nav a:hover{color:var(--teal);}
+.tag{position:absolute;top:10px;left:10px;background:var(--teal);color:#fff;font-size:.7rem;font-weight:600;padding:3px 9px;border-radius:999px;}
+.updated{font-size:.85rem;color:var(--muted);margin:-14px 0 16px;}
+.table-wrap{overflow-x:auto;border-radius:10px;}
+table{min-width:560px;}
+th.pc,td.pc{text-align:right;white-space:nowrap;}
+.cell-out{text-decoration:line-through;color:#a9b3ba;}
+.cell-low small{color:#a86a12;margin-left:4px;}
+address a{color:inherit;}
+
+.logo{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.04em;}
+.hero{background:linear-gradient(180deg,#e3eef2 0,var(--ice) 100%);}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;}
+.hero-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.hero-photos div{background:#fff;border:1px solid var(--line);border-radius:12px;aspect-ratio:1;overflow:hidden;}
+.hero-photos div:nth-child(even){transform:translateY(14px);}
+.hero-photos img{width:100%;height:100%;object-fit:contain;padding:8px;}
+.badge.live::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#1f7a4c;margin-right:7px;}
+.badge.closed::before{background:#b23a22;}
+.search-row{padding:22px 24px 0;}
+input[type="search"]{width:100%;max-width:420px;border:1px solid var(--line);border-radius:999px;padding:12px 18px;font:inherit;font-size:.95rem;background:#fff;color:var(--navy);}
+input[type="search"]:focus{outline:2px solid var(--teal);outline-offset:1px;}
+.goods-card{transition:transform .15s,box-shadow .15s;}
+.goods-card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(15,42,61,.08);}
+[hidden]{display:none!important;}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr;}}
+
+.logo-img{width:44px;height:44px;flex:none;}
