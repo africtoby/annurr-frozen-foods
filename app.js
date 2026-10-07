@@ -56,7 +56,7 @@ document.getElementById('search').addEventListener('input',e=>{
 })();
 
 function send(form,note){
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()})
+  fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
     .then(r=>{if(!r.ok)throw 0;note.textContent=note.dataset.ok;form.reset();})
     .catch(()=>{note.textContent='Could not send right now. Please message us on WhatsApp instead.';})
     .finally(()=>note.classList.add('show'));
