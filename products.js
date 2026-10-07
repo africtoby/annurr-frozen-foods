@@ -1,5 +1,5 @@
 const ORDERING='no';
-const UPDATED='28 September 2026';
+const UPDATED='7 October 2026';
 
 const PRODUCTS=[
   {
@@ -36,7 +36,7 @@ const PRODUCTS=[
     name:'Kote (Horse Mackerel)',
     type:'fish',
     photo:'images/kote.jpg',
-    perKg:5200,
+    perKg:5000,
     quarter:'available',
     half:'available',
     kg1:'available',
@@ -69,7 +69,7 @@ const PRODUCTS=[
     name:'Panla Osan / Alaska',
     type:'fish',
     photo:'images/panla-osan.jpg',
-    perKg:3400,
+    perKg:3200,
     quarter:'available',
     half:'available',
     kg1:'available',
@@ -132,6 +132,7 @@ const PRODUCTS=[
     photo:'images/chicken-feet-head.jpg',
     perKg:2000,
     tag:'New stock',
+    all:'out',
     quarter:'available',
     half:'available',
     kg1:'available',
@@ -142,6 +143,7 @@ const PRODUCTS=[
     type:'chicken',
     photo:'images/chicken-wings.jpg',
     perKg:6700,
+    all:'out',
     quarter:'available',
     half:'available',
     kg1:'available',
@@ -161,7 +163,7 @@ const PRODUCTS=[
     name:'Soft Chicken',
     type:'chicken',
     photo:'images/soft-chicken.jpg',
-    perKg:4500,
+    perKg:4700,
     quarter:'available',
     half:'available',
     kg1:'available',
