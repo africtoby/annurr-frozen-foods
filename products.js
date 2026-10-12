@@ -143,7 +143,6 @@ const PRODUCTS=[
     type:'chicken',
     photo:'images/chicken-wings.jpg',
     perKg:6700,
-    all:'out',
     quarter:'available',
     half:'available',
     kg1:'available',
