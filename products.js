@@ -1,5 +1,5 @@
 const ORDERING='no';
-const UPDATED='7 October 2026';
+const UPDATED='22 October 2026';
 
 const PRODUCTS=[
   {
