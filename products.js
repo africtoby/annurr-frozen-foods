@@ -1,5 +1,5 @@
 const ORDERING='no';
-const UPDATED='22 October 2026';
+const UPDATED='24 November 2026';
 
 const PRODUCTS=[
   {
@@ -89,7 +89,7 @@ const PRODUCTS=[
     name:'Owere Fish',
     type:'fish',
     photo:'images/owere.jpg',
-    perKg:3500,
+    perKg:3200,
     quarter:'available',
     half:'available',
     kg1:'available',
@@ -100,6 +100,7 @@ const PRODUCTS=[
     type:'fish',
     photo:'images/rock-fish.jpg',
     perKg:3500,
+    all:'out',
     quarter:'available',
     half:'available',
     kg1:'available',
@@ -120,6 +121,7 @@ const PRODUCTS=[
     type:'fish',
     photo:'images/argentina.jpg',
     perKg:4000,
+    all:'out',
     tag:'New stock',
     quarter:'available',
     half:'available',
@@ -162,7 +164,7 @@ const PRODUCTS=[
     name:'Soft Chicken',
     type:'chicken',
     photo:'images/soft-chicken.jpg',
-    perKg:4700,
+    perKg:4800,
     quarter:'available',
     half:'available',
     kg1:'available',
@@ -172,7 +174,7 @@ const PRODUCTS=[
     name:'Turkey',
     type:'chicken',
     photo:'images/turkey.jpg',
-    perKg:8000,
+    perKg:9000,
     quarter:'available',
     half:'available',
     kg1:'available',
