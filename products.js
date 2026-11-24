@@ -56,7 +56,7 @@ const PRODUCTS=[
     name:'Shawa',
     type:'fish',
     photo:'images/shawa.jpg',
-    perKg:2800,
+    perKg:3000,
     quarter:'available',
     half:'available',
     kg1:'available',
